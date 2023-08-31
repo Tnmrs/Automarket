@@ -7,13 +7,13 @@ namespace Automarket.Domain.Enum
     {
         [Display(Name = "Легковой автомобиль")]
         PassengerCar = 0,
-        [Display(Name = "Легковой автомобиль")]
+        [Display(Name = "Седан")]
         Sedan = 1,
-        [Display(Name = "Легковой автомобиль")]
+        [Display(Name = "Внедорожник")]
         Offroad = 2,
-        [Display(Name = "Легковой автомобиль")]
+        [Display(Name = "Автобоус")]
         Bus = 3,
-        [Display(Name = "Легковой автомобиль")]
+        [Display(Name = "Минивен")]
         Minivan = 4,
     }
 }
