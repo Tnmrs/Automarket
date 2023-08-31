@@ -7,7 +7,9 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Automarket", "Automarket\Au
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Debian", "Debian", "{B0B078D2-38C5-4CD5-AC03-39E9C8537C87}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Automarket.Debian", "Automarket.Debian\Automarket.Debian.csproj", "{43DC31CE-570E-4D74-BD30-3AEBEFC6363F}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Automarket.Domain", "Automarket.Debian\Automarket.Domain.csproj", "{43DC31CE-570E-4D74-BD30-3AEBEFC6363F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DAL", "DAL", "{E4AC4EF9-F73C-4446-8657-F953F9E70263}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
