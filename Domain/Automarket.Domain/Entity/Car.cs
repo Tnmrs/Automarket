@@ -1,11 +1,11 @@
 ﻿using System;
 using Automarket.Domain.Enum;
 
-namespace Automarket.Debian.Entity
+namespace Automarket.Domain.Entity
 {
-	public class Car
-	{
-		public int Id { get; set; }
+    public class Car
+    {
+        public int Id { get; set; }
 
         public string Name { get; set; }
 

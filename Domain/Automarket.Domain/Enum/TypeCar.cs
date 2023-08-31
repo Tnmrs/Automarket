@@ -17,5 +17,5 @@ namespace Automarket.Domain.Enum
         Minivan = 4,
     }
 }
-	
+
 

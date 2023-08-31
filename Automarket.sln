@@ -5,11 +5,11 @@ VisualStudioVersion = 25.0.1706.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Automarket", "Automarket\Automarket.csproj", "{A5232E5B-3722-4CA0-BB7C-7689887D3527}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Debian", "Debian", "{B0B078D2-38C5-4CD5-AC03-39E9C8537C87}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Automarket.Domain", "Automarket.Debian\Automarket.Domain.csproj", "{43DC31CE-570E-4D74-BD30-3AEBEFC6363F}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DAL", "DAL", "{E4AC4EF9-F73C-4446-8657-F953F9E70263}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Domain", "Domain", "{BA33D8F0-5A59-4598-A520-F07F8FA18BFA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Automarket.Domain", "Domain\Automarket.Domain\Automarket.Domain.csproj", "{6B749334-CFAE-4522-93DA-C90492209CB9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,10 +21,10 @@ Global
 		{A5232E5B-3722-4CA0-BB7C-7689887D3527}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A5232E5B-3722-4CA0-BB7C-7689887D3527}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A5232E5B-3722-4CA0-BB7C-7689887D3527}.Release|Any CPU.Build.0 = Release|Any CPU
-		{43DC31CE-570E-4D74-BD30-3AEBEFC6363F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{43DC31CE-570E-4D74-BD30-3AEBEFC6363F}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{43DC31CE-570E-4D74-BD30-3AEBEFC6363F}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{43DC31CE-570E-4D74-BD30-3AEBEFC6363F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6B749334-CFAE-4522-93DA-C90492209CB9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6B749334-CFAE-4522-93DA-C90492209CB9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6B749334-CFAE-4522-93DA-C90492209CB9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6B749334-CFAE-4522-93DA-C90492209CB9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -33,6 +33,6 @@ Global
 		SolutionGuid = {A7D645EA-3548-4016-A1EB-422CFB73F7A8}
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
-		{43DC31CE-570E-4D74-BD30-3AEBEFC6363F} = {B0B078D2-38C5-4CD5-AC03-39E9C8537C87}
+		{6B749334-CFAE-4522-93DA-C90492209CB9} = {BA33D8F0-5A59-4598-A520-F07F8FA18BFA}
 	EndGlobalSection
 EndGlobal
