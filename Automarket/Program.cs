@@ -1,4 +1,6 @@
 ﻿using Automarket.Data;
+using Automarket.Data.Interfaces;
+using Automarket.Data.Repositories;
 using Microsoft.EntityFrameworkCore;
 
 
@@ -11,6 +13,7 @@ builder.Services.AddDbContext<ApplicationDbContext>(options =>
     options.UseNpgsql(builder.Configuration.GetConnectionString("DefaultConnection"),
     b => b.MigrationsAssembly("Automarket")));
 
+builder.Services.AddScoped<ICarRepository, CarRepository>();
 
 var app = builder.Build();
 

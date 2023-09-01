@@ -2,6 +2,7 @@
 using Microsoft.AspNetCore.Mvc;
 using Automarket.Models;
 using Automarket.Domain.Entity;
+using Automarket.Data.Interfaces;
 
 namespace Automarket.Controllers;
 
@@ -14,15 +15,10 @@ public class HomeController : Controller
         _logger = logger;
     }
 
-    public IActionResult Index()
+    
+    public async Task<IActionResult> Index()
     {
-        Car car = new Car()
-        {
-            Name = "Dima",
-            Speed = 200
-        };
-
-        return View(car);
+        return View();
     }
 
     public IActionResult Privacy()
