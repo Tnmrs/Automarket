@@ -10,11 +10,15 @@
     <None Remove="Entity\" />
     <None Remove="Enum\" />
     <None Remove="Responce\" />
+    <None Remove="ViewModels\" />
+    <None Remove="ViewModels\Car\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Entity\" />
     <Folder Include="Enum\" />
     <Folder Include="Responce\" />
+    <Folder Include="ViewModels\" />
+    <Folder Include="ViewModels\Car\" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="7.0.10">
