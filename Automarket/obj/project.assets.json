@@ -428,6 +428,20 @@
         "runtime": {
           "bin/placeholder/Automarket.Domain.dll": {}
         }
+      },
+      "Autromarket.Service/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "dependencies": {
+          "Automarket.Data": "1.0.0",
+          "Automarket.Domain": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Autromarket.Service.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Autromarket.Service.dll": {}
+        }
       }
     }
   },
@@ -1056,12 +1070,18 @@
       "type": "project",
       "path": "../Domain/Automarket.Domain/Automarket.Domain.csproj",
       "msbuildProject": "../Domain/Automarket.Domain/Automarket.Domain.csproj"
+    },
+    "Autromarket.Service/1.0.0": {
+      "type": "project",
+      "path": "../Autromarket.Service/Autromarket.Service.csproj",
+      "msbuildProject": "../Autromarket.Service/Autromarket.Service.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net7.0": [
       "Automarket.Data >= 1.0.0",
       "Automarket.Domain >= 1.0.0",
+      "Autromarket.Service >= 1.0.0",
       "Microsoft.EntityFrameworkCore >= 7.0.10",
       "Microsoft.EntityFrameworkCore.Tools >= 7.0.10",
       "Npgsql.EntityFrameworkCore.PostgreSQL >= 7.0.4"
@@ -1095,6 +1115,9 @@
           "projectReferences": {
             "/Users/dmitrijsenatorov/Projects/Automarket/Automarket.Data/Automarket.Data.csproj": {
               "projectPath": "/Users/dmitrijsenatorov/Projects/Automarket/Automarket.Data/Automarket.Data.csproj"
+            },
+            "/Users/dmitrijsenatorov/Projects/Automarket/Autromarket.Service/Autromarket.Service.csproj": {
+              "projectPath": "/Users/dmitrijsenatorov/Projects/Automarket/Autromarket.Service/Autromarket.Service.csproj"
             },
             "/Users/dmitrijsenatorov/Projects/Automarket/Domain/Automarket.Domain/Automarket.Domain.csproj": {
               "projectPath": "/Users/dmitrijsenatorov/Projects/Automarket/Domain/Automarket.Domain/Automarket.Domain.csproj"

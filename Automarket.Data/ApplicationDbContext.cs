@@ -1,23 +1,24 @@
-﻿using System;
-using Automarket.Domain.Entity;
-using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
+using Automarket.Domain.Entity;
 
 namespace Automarket.Data
 {
     public class ApplicationDbContext : DbContext
     {
-    
-        public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options) : base(options) { }
-       
+        private readonly IConfiguration Configuration;
+
+        public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options, IConfiguration configuration) : base(options)
+        {
+            Configuration = configuration;
+        }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             base.OnConfiguring(optionsBuilder);
-            optionsBuilder.UseNpgsql("DefaultConnection");
+            optionsBuilder.UseNpgsql(Configuration.GetConnectionString("DefaultConnection"));
         }
 
         public DbSet<Car> Cars { get; set; }
     }
 }
-

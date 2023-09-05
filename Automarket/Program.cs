@@ -1,6 +1,8 @@
 ﻿using Automarket.Data;
 using Automarket.Data.Interfaces;
 using Automarket.Data.Repositories;
+using Autromarket.Service.Implementation;
+using Autromarket.Service.Interfaces;
 using Microsoft.EntityFrameworkCore;
 
 
@@ -14,6 +16,7 @@ builder.Services.AddDbContext<ApplicationDbContext>(options =>
     b => b.MigrationsAssembly("Automarket")));
 
 builder.Services.AddScoped<ICarRepository, CarRepository>();
+builder.Services.AddScoped<ICarService, CarService>();
 
 var app = builder.Build();
 

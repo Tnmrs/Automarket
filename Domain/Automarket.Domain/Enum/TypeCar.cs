@@ -6,15 +6,15 @@ namespace Automarket.Domain.Enum
     public enum TypeCar
     {
         [Display(Name = "Легковой автомобиль")]
-        PassengerCar = 0,
+        PassengerCar = 1,
         [Display(Name = "Седан")]
-        Sedan = 1,
+        Sedan = 2,
         [Display(Name = "Внедорожник")]
-        Offroad = 2,
+        Offroad = 3,
         [Display(Name = "Автобоус")]
-        Bus = 3,
+        Bus = 4,
         [Display(Name = "Минивен")]
-        Minivan = 4,
+        Minivan = 5,
     }
 }
 
